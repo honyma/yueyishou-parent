@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: service-server
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.0.195.74:8848
+      config:
+        server-addr: 10.0.195.74:8848
+        prefix: ${spring.application.name}
+        file-extension: yaml
+
+

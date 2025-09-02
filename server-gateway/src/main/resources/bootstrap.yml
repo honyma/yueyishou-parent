@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: server-gateway
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.179.139:8848
+      config:
+        server-addr: 172.16.179.139:8848
+        prefix: ${spring.application.name}
+        file-extension: properties
+
+
