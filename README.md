@@ -333,7 +333,9 @@ mvn -pl server-gateway -am spring-boot:run
 ```
 
 默认 Web 访问前缀：`http://localhost:8084/apis`
+
 回收分类列表：https://xiaobee.cn/apis/category/tree
+
 回收分类父列表：https://xiaobee.cn/apis/category/parent/list
 
 ---
